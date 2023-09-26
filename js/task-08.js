@@ -11,6 +11,13 @@ function takeSubmit(evt) {
         email: email.value ,
         password: password.value
     };
-    console.log(request);
+
+    const values = document.querySelectorAll('input');
+ values.forEach(input => {
+    if (input.value.trim() === '') {
+        alert("Все поля должны быть заполнены!")
+    }
+});
     evt.currentTarget.reset();
+
 }
