@@ -17,7 +17,8 @@ function takeSubmit(evt) {
     if (input.value.trim() === '') {
         alert("Все поля должны быть заполнены!")
     }
-});
+ });
+    console.log(request);
     evt.currentTarget.reset();
 
 }
